@@ -468,27 +468,21 @@
                   data-testid="error-city"
                 ></div>
               </div>
-              <div
-                class="form-actions"
+              <button
+                id="update-profile-btn"
+                type="button"
+                class="btn btn-primary"
+                data-testid="update-profile-button"
+                aria-label="Cập nhật thông tin tài khoản"
                 style="
-                  margin-top: 3rem;
-                  display: flex;
-                  gap: 1rem;
-                  padding-top: 1.5rem;
-                  border-top: 1px solid #e2e8f0;
+                  min-width: 120px;
+                  position: relative;
+                  z-index: 10;
+                  margin-top: 1rem;
                 "
               >
-                <button
-                  id="update-profile-btn"
-                  type="button"
-                  class="btn btn-primary"
-                  data-testid="update-profile-button"
-                  aria-label="Cập nhật thông tin tài khoản"
-                  style="min-width: 120px; position: relative; z-index: 10"
-                >
-                  <i class="fas fa-save"></i> Cập nhật
-                </button>
-              </div>
+                <i class="fas fa-save"></i> Cập nhật
+              </button>
             </form>
 
             <div id="success-message" class="success-message"></div>
