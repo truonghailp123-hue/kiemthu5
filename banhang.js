@@ -1035,7 +1035,7 @@ const app = {
     return `
             <div class="product-card" onclick="app.showProductDetail(${
               product.id
-            })">
+            })" data-testid="product-card-${product.id}">
                 <div class="product-image">${imageHtml}</div>
                 <div class="product-info">
                     <div class="product-brand">${product.brand}</div>
@@ -1052,12 +1052,12 @@ const app = {
                     <div class="product-actions">
                         <button class="btn btn-primary btn-small" onclick="event.stopPropagation(); app.addToCart(${
                           product.id
-                        })">
+                        })" data-testid="add-to-cart-${product.id}">
                             <i class="fas fa-cart-plus"></i> Thêm
                         </button>
                         <button class="btn btn-secondary btn-small" onclick="event.stopPropagation(); app.toggleWishlist(${
                           product.id
-                        })">
+                        })" data-testid="wishlist-${product.id}">
                             <i class="fas fa-heart ${
                               inWishlist ? "active" : ""
                             }"></i>
